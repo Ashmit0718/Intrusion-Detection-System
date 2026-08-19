@@ -1,0 +1,23 @@
+# Configuration for the hybrid IDS.
+# Thresholds for detection sensitivity live in nids/signatures.py so all
+# rule tuning stays in one place alongside the rules themselves.
+
+nids:
+  enabled: true
+  interface: null          # null = scapy default interface; or e.g. "eth0"
+  bpf_filter: null         # optional BPF filter, e.g. "ip or arp"
+
+hids:
+  enabled: true
+  auth_log_path: "/var/log/auth.log"   # Debian/Ubuntu SSH log path
+  # RHEL/CentOS systems typically use /var/log/secure instead
+  watched_files:
+    - /etc/passwd
+    - /etc/shadow
+    - /etc/hosts
+    - /etc/ssh/sshd_config
+  file_integrity_interval_sec: 30
+  process_scan_interval_sec: 15
+
+logging:
+  log_path: "logs/ids_alerts.log"

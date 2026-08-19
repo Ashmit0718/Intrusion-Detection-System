@@ -1,0 +1,5 @@
+[2026-08-19 06:02:41 UTC] [SYSTEM] IDS starting up.
+[2026-08-19 06:02:41 UTC] [SYSTEM] FIM baseline created for 4 files at logs/fim_baseline.json
+[2026-08-19 06:02:41 UTC] [SYSTEM] NIDS sniffer starting on iface=default
+[2026-08-19 06:02:41 UTC] [SYSTEM] HIDS log monitor: '/var/log/auth.log' not found, skipping.
+[2026-08-19 06:02:41 UTC] [SYSTEM] IDS running with 4 monitor thread(s). Press Ctrl+C to stop.

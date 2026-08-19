@@ -1,0 +1,18 @@
+{
+  "/etc/passwd": {
+    "hash": null,
+    "exists": false
+  },
+  "/etc/shadow": {
+    "hash": null,
+    "exists": false
+  },
+  "/etc/hosts": {
+    "hash": null,
+    "exists": false
+  },
+  "/etc/ssh/sshd_config": {
+    "hash": null,
+    "exists": false
+  }
+}
