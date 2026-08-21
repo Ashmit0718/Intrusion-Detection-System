@@ -13,10 +13,10 @@ from enum import Enum
 
 
 class Severity(Enum):
-    LOW = ("LOW", "\033[94m")       # blue
-    MEDIUM = ("MEDIUM", "\033[93m")  # yellow
-    HIGH = ("HIGH", "\033[91m")      # red
-    CRITICAL = ("CRITICAL", "\033[95m")  # magenta
+    LOW = ("LOW", "\033[94m")      
+    MEDIUM = ("MEDIUM", "\033[93m")  
+    HIGH = ("HIGH", "\033[91m")      
+    CRITICAL = ("CRITICAL", "\033[95m") 
 
     @property
     def label(self):
